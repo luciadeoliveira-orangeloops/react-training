@@ -12,9 +12,6 @@ const ControlPresupuesto = ({gastos, setGastos, presupuesto, setPresupuesto, set
         const totalGastado = gastos.reduce( (total, gasto) => gasto.cantidad + total, 0)
         const totalDisponible = presupuesto - totalGastado
         const nuevoPorcentaje = Number((((presupuesto-totalDisponible)/presupuesto) * 100).toFixed(2))
-        console.log(presupuesto)
-        console.log(totalDisponible)
-        console.log(nuevoPorcentaje)
         setGastado(totalGastado)
         setDisponible(totalDisponible)
         setTimeout(() => {
