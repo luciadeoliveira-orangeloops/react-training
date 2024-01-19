@@ -6,7 +6,6 @@ const url = `${import.meta.env.PUBLIC_API_URL}/posts?populate=imagen`
 const respuesta = await fetch(url)
 const {data} = await respuesta.json()
 
-console.log(data)
 ---
 
 <Layout title="Blog" description="Pagina de tienda de instrumentos musicales, guitarras, cursos, blog">
